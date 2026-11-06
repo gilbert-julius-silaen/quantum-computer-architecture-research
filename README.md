@@ -30,24 +30,23 @@ The simplified routing problem is represented using three mathematical structure
 
 The quantum hardware topology is modeled as an undirected graph:
 
-\[
+$$
 G=(V,E)
-\]
+$$
 
 where:
-
-- \(V\) represents physical qubit locations.
-- \(E\) represents pairs of locations connected by an allowed SWAP operation.
+- $V$ represents physical qubit locations.
+- $E$ represents pairs of locations connected by an allowed SWAP operation.
 
 ### 3.2 Qubit Configurations
 
 A qubit configuration is represented as a permutation:
 
-\[
+$$
 \pi \in S_n
-\]
+$$
 
-where \(S_n\) denotes the symmetric group of all permutations of \(n\) logical qubits.
+where $S_n$ denotes the symmetric group of all permutations of $n$ logical qubits.
 
 Each configuration describes the placement of logical qubits across physical locations.
 
@@ -59,11 +58,11 @@ The objective is to find a sequence of legal SWAP operations that transforms an 
 
 Formally:
 
-\[
+$$
 C^*=\min_{\mathcal{P}}|\mathcal{P}|
-\]
+$$
 
-where \(\mathcal{P}\) is a valid sequence of SWAP operations.
+where $\mathcal{P}$ is a valid sequence of SWAP operations.
 
 ## 4. Methodology
 
